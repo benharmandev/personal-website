@@ -23,6 +23,8 @@
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script src="assets/js/mars_years.js"></script>
+
 
   <title>Ben Harman</title>
 </head>
@@ -52,18 +54,18 @@
   <div class="ds-banner">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
           <figure>
             <img src="assets/images/profile-image.jpg">
           </figure>
         </div>
-        <div class="col-12">
+        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
           <section>
             <h1>
               <span>HI THERE</span>
               I’m Ben Harman<br>DATA ANALYST + DOG DAD based in California.
             </h1>
-            <ul class="ds-numbervalulist">
+            <ul class="ds-numbervaluelist">
               <li>
                 <strong>3</strong>
                 <span>Roles</span>
@@ -73,8 +75,12 @@
                 <span>Projects</span>
               </li>
               <li>
-                <strong>7</strong>
-                <span>Certifications</span>
+                <strong>6</strong>
+                <span>Certs</span>
+              </li>
+              <li>
+                <strong id="martianYears">Calculating...</strong>
+                <span>Martian Years Lived</span>
               </li>
             </ul>
           </section>
@@ -89,7 +95,7 @@
     <div class="container">
       <section>
         <h2 class="ds-heading">About Me</h2>
-        <p>Endlessly curious with data analyst experience in real estate, marketing, and economic forecasting.
+        <p>Endlessly curious with analysis experience in real estate, marketing, and economic forecasting.
           A passionate archivist with over 120 hours of recorded interviews with my grandparents as well as thousands of
           family photos digitized.
           Fascinated by tinkering with AI using LangChain and building my own autonomous agents with Python.
@@ -108,7 +114,7 @@
   <div class="ds-skills-section">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
           <h2 class="ds-heading">Skills</h2>
           <ul class="ds-skills-list">
             <li class="core-skill">SQL</li>
@@ -123,49 +129,47 @@
             <li>Streamlit</li>
             <li>LangChain</li>
             <li>Power Platform</li>
-            <li>HTML</li>
+            <li>Web Design</li>
             <li>AI Promptwriting</li>
             <li>Eating large quantities of food quickly ;)</li>
           </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <h2 class="ds-heading">Certifications</h2>
+          <ul class="ds-certifications-list">
+            <li class="certification-bubble">
+              <h3 class="core-skill">Power BI Data Analyst Associate | PL-300</h3>
+              <p>ID 3D25D4746DA0FDAF | Earned March 11, 2023</p>
+            </li>
+            <li class="certification-bubble">
+              <h3 class="core-skill">Azure Administrator | AZ-104</h3>
+              <p>ID 2A6B136CE7F6AF45 | Earned March 22, 2023</p>
+            </li>
+            <li class="certification-bubble">
+              <h3>Azure Fundamentals | AZ-900</h3>
+              <p>ID 9373B6916A998E0 | Earned March 12, 2023</p>
+            </li>
+            <li class="certification-bubble">
+              <h3>Microsoft 365 Fundamentals | MS-900</h3>
+              <p>ID 54F221314D69098A | Earned March 1, 2023</p>
+            </li>
+            <li class="certification-bubble">
+              <h3>Power Platform Fundamentals | PL-900</h3>
+              <p>ID 7203A01E48D3106C | Earned February 24, 2023</p>
+            </li>
+            <li class="certification-bubble">
+              <h3>Google Analytics 4</h3>
+              <p>Earned February 20, 2023</p>
+            </li>
+            <li class="certification-bubble">
+              <h3>111+ Linkedin Learning Courses</h3>
+              <p>Inquire for full list.</p>
+            </li>
         </div>
       </div>
     </div>
   </div>
   <!--  Skills -->
-
-  <!-- Certifications -->
-  <div class="ds-certifications-section">
-    <div class="container">
-      <h2 class="ds-heading">Certifications</h2>
-      <ul class="ds-certifications-list col-12">
-        <li class="certification-bubble">
-          <h3>Power BI Data Analyst Associate | PL-300</h3>
-          <p>ID 3D25D4746DA0FDAF | Earned March 11, 2023</p>
-        </li>
-        <li class="certification-bubble">
-          <h3>Azure Administrator | AZ-104</h3>
-          <p>ID 2A6B136CE7F6AF45 | Earned March 22, 2023</p>
-        </li>
-        <li class="certification-bubble">
-          <h3>Azure Fundamentals | AZ-900</h3>
-          <p>ID 9373B6916A998E0 | Earned March 12, 2023</p>
-        </li>
-        <li class="certification-bubble">
-          <h3>Microsoft 365 Fundamentals | MS-900</h3>
-          <p>ID 54F221314D69098A | Earned March 1, 2023</p>
-        </li>
-        <li class="certification-bubble">
-          <h3>Power Platform Fundamentals | PL-900</h3>
-          <p>ID 7203A01E48D3106C | Earned February 24, 2023</p>
-        </li>
-        <li class="certification-bubble">
-          <h3>Google Analytics 4</h3>
-          <p>Earned February 20, 2023</p>
-        </li>
-    </div>
-  </div>
-
-  <!-- Certifications -->
 
   <!--  Work -->
   <div class="ds-work-section">
@@ -174,48 +178,48 @@
       <div class="ds-work-list-section">
         <div class="ds-work-list">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
               <section>
-                <h3 class="ds-work-title">Tripy mobile app</h3>
+                <h3 class="ds-work-title">Airbnb Advisor Dashboard</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut,
                   congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus
                   sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales. </p>
-                <a href="works-setails.html" class="ds-button">Details</a>
+                <a href="project-details.html" class="ds-button">Details</a>
               </section>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
               <figure><img src="assets/images/work-1.jpg"></figure>
             </div>
           </div>
         </div>
         <div class="ds-work-list">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
               <section>
-                <h3 class="ds-work-title">Hello mobile app</h3>
+                <h3 class="ds-work-title">Employment Forecast Report</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut,
                   congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus
                   sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales. </p>
-                <a href="works-setails.html" class="ds-button">Details</a>
+                <a href="project-details.html" class="ds-button">Details</a>
               </section>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
               <figure><img src="assets/images/work-2.jpg"></figure>
             </div>
           </div>
         </div>
         <div class="ds-work-list">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
               <section>
                 <h3 class="ds-work-title">Cute cookies app</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut,
                   congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus
                   sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales. </p>
-                <a href="works-setails.html" class="ds-button">Details</a>
+                <a href="project-details.html" class="ds-button">Details</a>
               </section>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
               <figure><img src="assets/images/work-3.jpg"></figure>
             </div>
           </div>
@@ -234,7 +238,7 @@
         <p>Feel free to send an email</p>
         <a href="mailto:ben@benharman.dev" class="ds-button">Lets Talk</a>
       </section>
-      <span class="ds-copyright">© Ben Harman 2023 All rights reserved.
+      <span class="ds-copyright">© Ben Harman 2023 All rights reserved. Designed myself using the Bootstrap Framework.
     </div>
   </footer>
 

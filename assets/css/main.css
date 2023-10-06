@@ -227,7 +227,7 @@ figure {
 	color: var(--color-black);
 }
 
-.ds-numbervalulist {
+.ds-numbervaluelist {
 	list-style: none;
 	display: flex;
 	align-items: center;
@@ -237,22 +237,22 @@ figure {
 	margin-top: 60px;
 }
 
-.ds-numbervalulist li {
+.ds-numbervaluelist li {
 	margin-right: 60px;
 }
 
-.ds-numbervalulist li:last-child {
+.ds-numbervaluelist li:last-child {
 	margin-right: 0;
 }
 
-.ds-numbervalulist strong {
+.ds-numbervaluelist strong {
 	display: block;
 	color: var(--color-secondary);
 	font-size: 36px;
 	font-weight: 800;
 }
 
-.ds-numbervalulist span {
+.ds-numbervaluelist span {
 	font-size: var(--font-size-base);
 	letter-spacing: 1px;
 }
@@ -386,6 +386,9 @@ figure {
 	font-weight: 300;
 }
 
+.ds-certifications-list h3.core-skill {
+	font-weight: 750;
+}
 
 /*-----------------------------------------------------------------
   6. >>> Work Style
@@ -407,13 +410,13 @@ figure {
 	padding-right: 120px;
 }
 
-.ds-work-tilte,
+.ds-work-title,
 .ds-work-det-title,
 .ds-work-det-dep {
 	color: var(--color-black);
 }
 
-.ds-work-tilte {
+.ds-work-title {
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 600;
@@ -575,19 +578,19 @@ figure {
 		line-height: 40px;
 	}
 
-	.ds-numbervalulist {
+	.ds-numbervaluelist {
 		margin-top: 20px;
 	}
 
-	.ds-numbervalulist li {
+	.ds-numbervaluelist li {
 		margin-right: 30px;
 	}
 
-	.ds-numbervalulist strong {
+	.ds-numbervaluelist strong {
 		font-size: 30px;
 	}
 
-	.ds-numbervalulist span {
+	.ds-numbervaluelist span {
 		font-size: 14px;
 	}
 
