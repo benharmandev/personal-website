@@ -485,6 +485,10 @@ figure {
 	background-color: var(--color-main);
 }
 
+h3.prevent-hyphen-break {
+	word-break: keep-all;
+}
+
 /*-----------------------------------------------------------------
   7. >>> Footer Style
 ----------------------------------------------------------------*/
