@@ -342,6 +342,10 @@ figure {
 	font-weight: 750;
 }
 
+.ds-skills-list li.no-wrap {
+	white-space: nowrap;
+}
+
 
 /*-----------------------------------------------------------------
   5. >>> Certifications Style
