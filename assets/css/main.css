@@ -186,21 +186,46 @@ figure {
 }
 
 .ds-social li a {
-	border-radius: 100%;
-	color: var(--color-white);
-	width: 24px;
-	height: 24px;
-	background-color: var(--color-secondary);
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	text-align: center;
-	font-size: 16px;
+	text-decoration: none;
 }
 
-.ds-social li a:hover {
-	background-color: var(--color-black);
-	color: var(--color-white);
+.ds-social img {
+	max-width: 24px;
+	height: auto;
+	transition: var(--transition-standard);
+}
+
+.ds-social img.default-icon {
+	display: block;
+}
+
+.ds-social img.hover-icon {
+	display: none;
+}
+
+.ds-social li a:hover img.default-icon {
+	display: none;
+}
+
+.ds-social li a:hover img.hover-icon {
+	display: block;
+}
+
+.ds-social li span {
+	margin-left: 10px;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: var(--color-black);
+	font-weight: 400;
+	transition: var(--transition-standard);
+	text-decoration: none;
+}
+
+.ds-social li a:hover span {
+	text-decoration: underline;
 }
 
 /*-----------------------------------------------------------------
