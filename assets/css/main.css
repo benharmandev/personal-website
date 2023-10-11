@@ -412,6 +412,7 @@ figure {
 .ds-work-list section {
 	padding-top: 20px;
 	padding-right: 120px;
+	padding-bottom: 20px;
 }
 
 .ds-work-title,
@@ -491,6 +492,21 @@ figure {
 
 h3.prevent-hyphen-break {
 	word-break: keep-all;
+}
+
+.skills {
+	font-weight: 300;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.project-image img {
+	max-width: 480px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
 }
 
 /*-----------------------------------------------------------------
@@ -703,6 +719,64 @@ h3.prevent-hyphen-break {
 		padding-right: 30px;
 		padding-bottom: 60px;
 	}
+}
+
+/* Media queries for specific image scaling */
+/* When the screen width is between 1280px to 1920px, the image size is reduced to 480px (3/4 of the original) */
+@media (min-width: 1401px) and (max-width: 1920px) {
+	.project-image img {
+		max-width: 480px;
+	}
+}
+
+/* When the screen width is between 960px to 1280px, the image size is reduced to 320px (1/2 of the original) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+	.project-image img {
+		max-width: 400px;
+	}
+}
+
+/* When the screen width is between 760px to 960px, the image size is reduced to 240px (3/8 of the original) */
+@media (min-width: 992px) and (max-width: 1200px) {
+	.project-image img {
+		max-width: 320px;
+	}
+}
 
 
+@media (min-width: 768px) and (max-width: 991px) {
+	.project-image img {
+		max-width: 240px;
+	}
+}
+
+/* For smaller screens, the image wraps */
+@media (min-width: 520px) and (max-width: 768px) {
+	.project-image img {
+		max-width: 400px;
+	}
+}
+
+@media (min-width: 440px) and (max-width: 519px) {
+	.project-image img {
+		max-width: 320px;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 439px) {
+	.project-image img {
+		max-width: 240px;
+	}
+}
+
+@media (min-width: 240px) and (max-width: 359px) {
+	.project-image img {
+		max-width: 160px;
+	}
+}
+
+@media (max-width: 239px) {
+	.project-image img {
+		max-width: 120px;
+	}
 }
