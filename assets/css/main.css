@@ -534,6 +534,36 @@ h3.prevent-hyphen-break {
 	padding-bottom: 20px;
 }
 
+.or-text {
+	/* Adjust this to set the space between the button and 'OR' */
+	font-weight: 300;
+	/* Light font-weight as requested */
+	color: #000;
+	/* Black color */
+}
+
+.link-container {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+.code-link {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 600;
+	margin-left: 10px;
+	text-transform: uppercase;
+	color: var(--color-black);
+	white-space: nowrap;
+}
+
+.code-link:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
 /*-----------------------------------------------------------------
   7. >>> Footer Style
 ----------------------------------------------------------------*/
